@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-
+#include <stdint.h>
 
 namespace Version
 {
@@ -19,9 +19,9 @@ struct Version
      */
     Version(long long version);
 
-    int major {0};
-    int minor {0};
-    int patch {0};
+    uint64_t major {0};
+    uint64_t minor {0};
+    uint64_t patch {0};
 
     /// Type of build
     std::string type {""};

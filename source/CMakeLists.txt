@@ -140,6 +140,8 @@ if(MINGW)
     )
 endif(MINGW)
 
+add_subdirectory(coroAssert)
+
 
 #------------------------------------------------------------------------------
 # Other MISC targets

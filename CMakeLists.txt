@@ -69,7 +69,7 @@ add_subdirectory(doc)
 # Images, databases and other data which needs to be installed for project
 add_subdirectory(data)
 
-
+find_package(asio CONFIG REQUIRED)
 
 # Source code
 add_subdirectory(source)

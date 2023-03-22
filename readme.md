@@ -56,7 +56,7 @@ git pull --git-dir='.git-cleanCppProject'
 ### Prerequisites
 
 * CMake 3.2 and newer
-* Compiler with support for C++14
+* Compiler with support for C++20
 * git - for downloading external resources
 * Doxygen for docs (*Graphviz for more graphs in docs, PlantUML for more UML diagrams*, PlantUML needs java)
 * clang-tools for static analysis and formatting

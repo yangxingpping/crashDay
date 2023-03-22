@@ -24,7 +24,7 @@ BASE_FLAGS = [
     '-Wextra',
     '-Wmisleading-indentation',
     '-pedantic',
-    '-std=c++14',
+    '-std=c++20',
     '-xc++',
     '-I/usr/lib/'
     '-I/usr/include/'

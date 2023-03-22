@@ -6,9 +6,9 @@ include(sanitizers)
 
 # Enable helpfull warnings and C++14 for all files
 if(MSVC)
-    add_compile_options(/std:c++14 /W3 /WX )
+    add_compile_options(/std:c++20 /W3 /WX )
 else()
-    add_compile_options(-std=c++14 -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wunused -pedantic)
+    add_compile_options(-std=c++20 -fcoroutines -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wunused -pedantic)
 endif()
 
 # configure version.cpp.in with selected version
@@ -96,7 +96,7 @@ add_custom_target(run DEPENDS exampleApp-run)
 # Add building new shared library
 # add_library(exampleLibrary SHARED ${LIBRARY_SOURCES})
 # target_link_libraries (exampleLibrary PRIVATE ${CMAKE_THREAD_LIBS_INIT})
-# set_property(TARGET exampleLibrary PROPERTY CXX_STANDARD 14) # we want C++14
+# set_property(TARGET exampleLibrary PROPERTY CXX_STANDARD 14) # we want C++20
 
 # How to include and link OpenGL and GLUT libraries
 # find_package(OpenGL REQUIRED)

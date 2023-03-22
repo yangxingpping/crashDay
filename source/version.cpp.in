@@ -8,7 +8,7 @@ Version makeCurrentVersion()
     // clang-format off
     ret.major = @PROJECT_VERSION_MAJOR@;
     ret.minor = @PROJECT_VERSION_MINOR@;
-    ret.patch = @PROJECT_VERSION_PATCH@;
+    ret.patch = 0x@PROJECT_VERSION_PATCH@;
     // clang-format on
     ret.datetime = std::string(__DATE__) + " " + __TIME__;
     ret.machine = "@VERSION_HOST@";

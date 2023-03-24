@@ -6,7 +6,7 @@ set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
 
 # Project setup, versioning stuff here, change when changing the version
 # Note: keep the project name lower case only for easy linux packaging support
-project (cleancppproject VERSION 0.3.5)
+project (crashDay VERSION 0.3.5)
 
 include(${PROJECT_SOURCE_DIR}/version.cmake)
 

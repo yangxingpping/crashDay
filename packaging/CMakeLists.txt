@@ -6,7 +6,7 @@ include(InstallRequiredSystemLibraries)
 set(CPACK_PACKAGE_VENDOR "kracejic")
 set(CPACK_PACKAGE_NAME ${PROJECT_NAME})
 set(CPACK_PACKAGE_CONTACT "kracejic <kracejic@gmail.com>")
-set(HOMEPAGE "https://github.com/kracejic/cleanCppProject")
+set(HOMEPAGE "https://github.com/kracejic/crashDay")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY
     "Clean cpp project. This is simple cpp example project build with CMake.")
 set(CPACK_PACKAGE_DESCRIPTION_FILE "${PROJECT_SOURCE_DIR}/readme.md")

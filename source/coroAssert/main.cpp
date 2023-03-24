@@ -93,6 +93,8 @@ int main(int argc, char const* argv[])
     o.set(5);
     cout << o.get() << endl;
 
+    //o.normalCrash();
+    o.coroCrash();
     // possible memory leak here, run with `make analyze`
     int* a = new int(5);
     cout << *a << endl;

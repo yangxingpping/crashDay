@@ -2,6 +2,11 @@
 #include <string>
 #include <vector>
 
+#include <memory>
+
+#include "oneshot.hpp"
+
+using std::shared_ptr;
 
 /**
  * Empty BaseClass, just to show how it looks in doxygen.
@@ -30,6 +35,7 @@ class BaseClass
         delete mPointer;
     };
     int* mPointer;
+    
 };
 
 /**
@@ -40,6 +46,12 @@ class Data
   public:
     Data() {};
     ~Data() {};
+    int func()
+    {
+        int i = _a;
+        return ++i;
+    }
+    int _a {0};
 };
 
 /**
@@ -58,13 +70,20 @@ class SomeClass : public BaseClass
     SomeClass(); ///< Creates empty SomeClass
     ~SomeClass();
 
-    Data* mParent;
+    Data* mParent {nullptr};
+
+    shared_ptr<oneshot::sender<void>> _hh {nullptr};
+    shared_ptr<oneshot::receiver<void>> _ii {nullptr};
 
     /**
      * Sets the value
      * @param x input value
      */
     void set(int x);
+
+    void normalCrash();
+
+    void coroCrash();
 
     /**
      * get the value
